@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <!-- <header>
+        <input type="text" placeholder="Pesquisar">
+    </header> -->
+
+
+    <header>
+        <div class="pesquisa">
+            <input type="text">
+            <h6>Pesquisar</h6>
+            </input>
+        </div>
+    </header>
+
+    <main>
+        <h3>Minhas Tarefas
+            <button onclick="novaTarefa()">Novas Tarefas</button>
+        </h3>
+        <ul>
+            <li>
+                <div>
+                    <h5>Pendurar Quadro</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ab praesentium asperiores rem non
+                        dolorem culpa quas aliquid adipisci nesciunt. Ea, eveniet? Laudantium dolorum dolorem tenetur,
+                        ipsa
+                        neque quaerat corrupti.</p>
+                </div>
+                <div><box-icon type='solid' name='trash' onclick="confirmarExclusao()"></box-icon></div>
+            </li>
+            <li>
+                <div>
+                    <h5>Almoçar</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, error accusantium optio
+                        cum
+                        distinctio expedita adipisci, commodi quisquam veritatis itaque ducimus, quis sequi tempore
+                        officiis
+                        accusamus. Facilis praesentium sequi mollitia!</p>
+                </div>
+                <div><box-icon type='solid' name='trash' onclick="confirmarExclusao()"></box-icon></div>
+
+            </li>
+            <li>
+                <div>
+                    <h5>estudar</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita totam dolorum assumenda
+                        veniam!
+                        Eligendi quas temporibus saepe inventore tempore quis vitae ipsum enim. Officiis deleniti nisi
+                        nihil
+                        eos, animi repellat?</p>
+                </div>
+                <div><box-icon type='solid' name='trash' onclick="confirmarExclusao()"></box-icon></div>
+
+            </li>
+            <li>
+                <div>
+                    <h5>reunião</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est error optio, tempore voluptas velit
+                        praesentium corporis quasi, quibusdam consequatur accusamus tenetur quisquam non. Officia
+                        blanditiis
+                        fugit quis a harum? Nemo.</p>
+                </div>
+                <div><box-icon type='solid' name='trash' onclick="confirmarExclusao()"></box-icon></div>
+
+            </li>
+            <li>
+                <div>
+                    <h5>levar filho no colegio</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis blanditiis nostrum
+                        molestias
+                        dolorem repudiandae velit beatae alias reiciendis modi laboriosam laborum, quo inventore illo ex
+                        fugiat, id corrupti! Molestiae.</p>
+                </div>
+                <div><box-icon type='solid' name='trash' onclick="confirmarExclusao()"></box-icon></div>
+            </li>
+        </ul>
+    </main>
+
+
+    <div id="overlay" onclick="fecharModal()"></div>
+    <div id="modal">
+        <form id="criar">
+            <h3>Nova Tarefa <box-icon name="x" onclick="fecharModal()"></box-icon></h3>
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" placeholder="Digite o titulo" required>
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao"></textarea>
+            <button type="submit">criar</button>
+        </form>
+        <div id="confirmacao">
+            <h3>alerta <box-icon name="x" onclick="fecharModal()"></box-icon></h3>
+            <p>Deseja realmente apagar esta tarefa?</p>
+            <div class="acoes">
+                <button>Cancelar</button>
+                <button>Confirmar</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
+
+
